@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #faf8ef;
+}
+
+h1 {
+    color: #776e65;
+}
+
+canvas {
+    border: 1px solid #bbada0;
+    background-color: #bbada0;
+    position: relative;
+}
+
+canvas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(to right, transparent 99px, #a99e93 100px, #a99e93 101px, transparent 102px) 0 0,
+        linear-gradient(to bottom, transparent 99px, #a99e93 100px, #a99e93 101px, transparent 102px) 0 0;
+    background-size: 100px 100px;
+    pointer-events: none;
+}
+
+.empty-cell {
+    background-color: rgba(238, 228, 218, 0.35);
+}
+
+.score {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#score {
+    color: #776e65;
+}
+
+/* @keyframes tile-appear {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+} */
